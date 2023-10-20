@@ -1,0 +1,35 @@
+@import url(./null-style.css);
+@import url(./header/header.css);
+@import url(./main/main-section/mainSection.css);
+@import url(./main/spec-section/specSection.css);
+@import url(./main/aboutUs-section/aboutUsSection.css);
+@import url(./main/project-section/projectSection.css);
+@font-face {
+  font-family: "RM";
+  src: url(/font/Roboto-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "RR";
+  src: url(/font/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "LM";
+  src: url(/font/Larken-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "LR";
+  src: url(/font/Larken-Regular.ttf);
+  font-weight: 400;
+}
+.body-wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 425px;
+  width: 100%;
+  overflow: hidden;
+  background: #1A1D26;
+  position: relative;
+}

@@ -1,0 +1,21 @@
+include components/header/header.pug
+include components/main/main-section/mainSection.pug
+include components/main/spec-section/specSection.pug
+include components/main/aboutUs-section/aboutUsSection.pug
+include components/main/project-section/projectSection.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title RMС
+        link(rel="shortcut icon", href="/img/logo.svg")
+        link(rel="stylesheet", href="/components/style.css")
+    body 
+        .body-wrapper
+            +header 
+            +mainSection
+            +specSection
+            +aboutUsSection
+            +projectSection

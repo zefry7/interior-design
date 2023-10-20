@@ -1,0 +1,136 @@
+.spec-section {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1290px;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: clamp(50px, 7.2vw, 140px);
+}
+
+.spec-section__label {
+  margin-bottom: clamp(20px, 1.5vw, 30px);
+  letter-spacing: 4.8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "LM";
+  color: #FFC978;
+}
+
+.spec-section__name {
+  margin-bottom: clamp(30px, 2.7vw, 52px);
+  font-size: clamp(36px, 3.1vw, 60px);
+  font-family: "LR";
+  color: white;
+}
+
+.spec-section__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: clamp(20px, 1.5vw, 30px);
+}
+.spec-section__items li:nth-child(4n+1), .spec-section__items li:nth-child(4n+4) {
+  top: -129px;
+}
+.spec-section__items li:last-child {
+  display: none;
+}
+.spec-section__items li:nth-child(4n+1) {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(0, 0, 0, 0.6)), to(rgba(255, 255, 255, 0))), url(../../../img/display/spec-1.png) center/100% no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(255, 255, 255, 0)), url(../../../img/display/spec-1.png) center/100% no-repeat;
+}
+.spec-section__items li:nth-child(4n+2) {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(0, 0, 0, 0.6)), to(rgba(255, 255, 255, 0))), url(../../../img/display/spec-2.png) center/100% no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(255, 255, 255, 0)), url(../../../img/display/spec-2.png) center/100% no-repeat;
+}
+.spec-section__items li:nth-child(4n+3) {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(0, 0, 0, 0.6)), to(rgba(255, 255, 255, 0))), url(../../../img/display/spec-3.png) center/100% no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(255, 255, 255, 0)), url(../../../img/display/spec-3.png) center/100% no-repeat;
+}
+.spec-section__items li:nth-child(4n+4) {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(0, 0, 0, 0.6)), to(rgba(255, 255, 255, 0))), url(../../../img/display/spec-4.png) center/100% no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(255, 255, 255, 0)), url(../../../img/display/spec-4.png) center/100% no-repeat;
+}
+
+.spec-section__item {
+  padding: clamp(20px, 2vw, 30px);
+  position: relative;
+  z-index: 12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 300px;
+  height: 500px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.spec-section__item-name {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: "LM";
+  color: white;
+}
+
+.spec-section__item-description {
+  font-size: 16px;
+  color: white;
+  font-family: "RR";
+}
+
+.spec-section__decor-text {
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  right: -315px;
+  bottom: -61px;
+  font-size: clamp(110px, 8.75vw, 168px);
+  line-height: 90%;
+  font-family: "RR";
+  text-transform: uppercase;
+  color: rgba(11, 14, 23, 0.5019607843);
+}
+
+@media (max-width: 1440px) {
+  .spec-section__items li:nth-child(4n+1), .spec-section__items li:nth-child(4n+4) {
+    top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .spec-section__items li:last-child {
+    display: block;
+  }
+}
+@media (max-width: 425px) {
+  .spec-section__label {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .spec-section__name {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}

@@ -1,0 +1,84 @@
+.header {
+  padding: 0 clamp(20px, 5.2vw, 100px);
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 15;
+}
+
+.header__logo {
+  font-size: clamp(40px, 2.6vw, 50px);
+  font-family: "LM";
+  color: white;
+  margin-right: clamp(0px, 9.3vw, 180px);
+}
+
+.header__menu {
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: clamp(10px, 1.8vw, 35px);
+}
+
+.header__item-menu {
+  text-transform: uppercase;
+  font-family: "RM";
+  color: #ABAEB7;
+}
+
+.header__button {
+  padding: 15px 30px;
+  border: 1px solid white;
+  font-family: "RM";
+  font-size: 16px;
+  background: none;
+  color: white;
+}
+
+.burger__button {
+  height: 24px;
+  width: 27px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.burger__button span {
+  background-color: white;
+  border-radius: 14px;
+  width: 70%;
+  height: 3px;
+}
+.burger__button span:first-child, .burger__button span:last-child {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header__logo {
+    margin-right: auto;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__button {
+    display: none;
+  }
+  .burger__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
