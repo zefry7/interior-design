@@ -1,0 +1,113 @@
+.create-section {
+  margin-bottom: 159px;
+  height: 603px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #23272F;
+  position: relative;
+}
+
+.create-section__home-img {
+  margin-left: clamp(0px, 12.2vw, 235px);
+  margin-right: clamp(0px, 7.5vw, 145px);
+  position: relative;
+  z-index: 15;
+}
+.create-section__home-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.create-section__info {
+  width: 630px;
+  position: relative;
+  z-index: 15;
+}
+
+.create-section__title {
+  margin-bottom: clamp(30px, 2.6vw, 50px);
+  max-width: clamp(388px, 32.8vw, 630px);
+  font-size: clamp(36px, 3.1vw, 60px);
+  line-height: 115%;
+  font-family: "LR";
+  color: white;
+}
+
+.create-section__percent-row {
+  margin-bottom: clamp(30px, 2.6vw, 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: clamp(32px, 3.9vw, 75px);
+}
+
+.create-section__percent {
+  margin-bottom: 4px;
+  font-size: clamp(44px, 3.33vw, 64px);
+  line-height: 110%;
+  font-family: "LR";
+  color: #FFAF76;
+}
+.create-section__percent span {
+  font-size: 32px;
+}
+
+.create-section__name {
+  font-size: 18px;
+  font-family: "RR";
+  color: #ABAEB7;
+}
+
+.create-section__button {
+  padding: 20px 35px;
+  border: 1px solid white;
+  font-family: "RM";
+  font-size: 16px;
+  background: none;
+  color: white;
+}
+
+.create-section__decor {
+  position: absolute;
+  width: 573px;
+  right: 0;
+  font-size: 985px;
+  color: #1A1D26;
+}
+
+@media (max-width: 1024px) {
+  .create-section {
+    padding: 30px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+  .create-section__percent-row {
+    gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .create-section__title {
+    max-width: 100%;
+  }
+  .create-section__info {
+    max-width: 558px;
+    width: 100%;
+  }
+  .create-section__decor {
+    display: none;
+  }
+  .create-section__home-img {
+    margin: 0;
+  }
+  .create-section__button {
+    margin-bottom: 20px;
+  }
+}

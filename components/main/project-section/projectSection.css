@@ -11,9 +11,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .project-section__label {
@@ -26,7 +23,7 @@
 }
 
 .project-section__title-row {
-  margin-bottom: 50px;
+  margin-bottom: clamp(30px, 2.6vw, 50px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,14 +54,17 @@
   font-family: "RR";
   color: #ABAEB7;
   position: relative;
+  cursor: pointer;
 }
 .project-section__item input {
   position: absolute;
   width: 100%;
   opacity: 0;
+  cursor: pointer;
 }
 .project-section__item span {
   padding: 0 5px;
+  cursor: pointer;
 }
 .project-section__item input:checked + span {
   color: #FFB076;
@@ -74,9 +74,9 @@
 .project-section__list-project {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+  -ms-grid-columns: 1fr clamp(10px, 1.04vw, 20px) 1fr clamp(10px, 1.04vw, 20px) 1fr clamp(10px, 1.04vw, 20px) 1fr;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: clamp(10px, 1.04vw, 20px);
 }
 .project-section__list-project .project-section__list-column:nth-child(2),
 .project-section__list-project .project-section__list-column:nth-child(4) {
@@ -91,7 +91,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: clamp(10px, 1.04vw, 20px);
 }
 
 .project-section__project img {
@@ -100,6 +100,11 @@
 }
 
 @media (max-width: 1024px) {
+  .project-section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .project-section__title-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -115,5 +120,20 @@
   .project-section__list-project {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+  .project-section__list-project .project-section__list-column:nth-child(2) {
+    margin-top: 50px;
+  }
+  .project-section__list-project .project-section__list-column:nth-child(3) {
+    margin-top: -50px;
+  }
+  .project-section__list-project .project-section__list-column:nth-child(4) {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .project-section__list-project .project-section__list-column:nth-child(3),
+  .project-section__list-project .project-section__list-column:nth-child(4) {
+    display: none;
   }
 }

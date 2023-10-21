@@ -1,7 +1,5 @@
 .spec-section {
-  margin: 0 auto;
   padding: 0 20px;
-  max-width: 1290px;
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -105,7 +103,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  right: -315px;
+  right: 0;
   bottom: -61px;
   font-size: clamp(110px, 8.75vw, 168px);
   line-height: 90%;

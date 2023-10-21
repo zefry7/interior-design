@@ -104,6 +104,9 @@
   font-family: "LR";
   color: white;
 }
+.aboutUs-section__percent span {
+  font-size: clamp(44px, 3.33vw, 64px);
+}
 
 .aboutUs-section__text {
   font-size: 20px;

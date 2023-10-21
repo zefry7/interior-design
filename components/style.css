@@ -4,6 +4,8 @@
 @import url(./main/spec-section/specSection.css);
 @import url(./main/aboutUs-section/aboutUsSection.css);
 @import url(./main/project-section/projectSection.css);
+@import url(./footer/footer.css);
+@import url(./main/create-section/createSection.css);
 @font-face {
   font-family: "RM";
   src: url(/font/Roboto-Medium.ttf);

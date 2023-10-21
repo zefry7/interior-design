@@ -1,0 +1,158 @@
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section__row-img {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+.footer-section__info {
+    padding: 73px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    .footer-section__column:nth-child(1) {
+        margin-right: clamp(0px, 5.2vw, 100px);
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .footer-section__column:nth-child(2) {
+        padding: 0 clamp(0px, 7.8vw, 150px);
+        position: relative;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        &::before {
+            content: "";
+            display: inline-block;
+            min-width: 2px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            background: linear-gradient(180deg, rgba(197, 225, 228, 0.00) 0%, #C5E1E4 51.56%, rgba(197, 225, 228, 0.00) 100%);
+        }
+        &::after {
+            content: "";
+            display: inline-block;
+            min-width: 2px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            background: linear-gradient(180deg, rgba(197, 225, 228, 0.00) 0%, #C5E1E4 51.56%, rgba(197, 225, 228, 0.00) 100%);
+        }
+    }
+    .footer-section__column:nth-child(3) {
+        margin-left: clamp(0px, 5.2vw, 100px);
+        width: clamp(245px, 17.9vw, 345px);
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+
+        .footer-section__text:nth-child(2) {
+            margin-bottom: 30px;
+        }
+    }
+}
+.footer-section__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-section__name {
+    margin-bottom: clamp(40px, 4.8vw, 93px);
+    font-size: clamp(40px, 2.6vw, 50px);
+    font-family: "LM";
+    color: white;
+}
+.footer-section__description {
+    width: clamp(245px, 17.9vw, 345px);
+    font-size: 16px;
+    line-height: 160%;
+    font-family: "RR";
+    color: #D7E0E1;
+}
+.footer-section__link {
+    font-size: 18px;
+    font-family: "RR";
+    color: #ABAEB7;
+
+    &:hover {
+        color: #FFB077;
+    }
+}
+.footer-section__label {
+    margin-bottom: 10px;
+    font-size: clamp(40px, 2.6vw, 50px);
+    font-family: "LR";
+    color: white;
+}
+.footer-section__text {
+    font-size: 18px;
+    line-height: 150%;
+    font-family: "RR";
+    color: #ABAEB7;
+}
+.footer-section__copyright {
+    padding: 15px 0;
+    width: 100%;
+    border-top: 1px solid #2E313A;
+    text-align: center;
+    font-family: "RR";
+    color: #abaeb7cc;
+    span {
+        color: #FFB077;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-section__info {
+        max-width: 636px;
+        width: 100%;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        .footer-section__column:nth-child(1) {
+            margin-right: 0;
+            margin-bottom: 90px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        .footer-section__column:nth-child(2) {
+            padding: 0;
+            padding-right: clamp(0px, 7.8vw, 150px);
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
+        }
+        .footer-section__column:nth-child(3) {
+            width: 240px;
+            margin: 0;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+    }
+
+    .footer-section__description {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+
+}
