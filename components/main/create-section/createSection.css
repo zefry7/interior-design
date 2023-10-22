@@ -1,5 +1,5 @@
 .create-section {
-  margin-bottom: 159px;
+  margin-bottom: clamp(50px, 7.2vw, 140px);
   height: 603px;
   display: -webkit-box;
   display: -ms-flexbox;

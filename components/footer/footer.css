@@ -18,7 +18,18 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+}
+
+.footer-section__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   overflow-x: auto;
+}
+
+.footer-section__img {
+  width: auto;
 }
 
 .footer-section__info {

@@ -1,0 +1,132 @@
+.check-section {
+    margin: 0 auto;
+    margin-bottom: clamp(50px, 7.2vw, 140px);
+    padding: 0 20px;
+    position: relative;
+    max-width: 1290px;
+    width: 100%;
+}
+.check-section__row-title {
+    align-self: auto;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.check-section__label {
+    margin-bottom: clamp(20px, 1.5vw, 30px);
+    letter-spacing: 4.8px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "LM";
+    color: #FFC978;
+}
+.check-section__title {
+    font-size: clamp(36px, 3.1vw, 60px);
+    font-family: "LR";
+    color: white;
+}
+.check-section__text {
+    max-width: 445px;
+    font-size: 16px;
+    font-family: "RR";
+    color: #ABAEB7;
+    display: flex;
+    align-items: center;
+    line-height: 160%;
+    &::before {
+        content: "";
+        display: inline-block;
+        min-width: 2px;
+        height: 150px;
+        position: relative;
+        left: -30px;
+        background: linear-gradient(180deg, rgba(197, 225, 228, 0.00) 0%, #C5E1E4 51.56%, rgba(197, 225, 228, 0.00) 100%);
+    }
+}
+.check-section__info {
+    display: flex;
+}
+.check-section__wrapper {
+    width: 100%;
+    margin-right: 51px;
+}
+.check-section__scroll {
+    overflow-x: auto;
+}
+.check-section__table {
+    width: 100%;
+    border-spacing: 0;
+    th {
+        padding: 0px 0 10px;
+        font-size: 16px;
+        text-align: left;
+        font-weight: normal;
+        font-family: "LR";
+        color: #FFC978;
+        border-bottom: 1px solid #ABAEB7;
+    }
+    td {
+        padding: 20px 0;
+        border-bottom: 1px solid #ABAEB7;
+        font-family: "RR";
+        color: #ABAEB7;
+    }
+
+    tr {
+        & td:first-child {
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+
+    & tr:last-child {
+        td {
+            border-bottom: none;
+        }
+    }
+}
+.check-section__view-now {
+    font-size: 16px;
+    text-decoration: underline;
+    background-color: inherit;
+    color: white;
+
+    &:hover {
+        color: #FFB077;
+    }
+}
+.check-section__img {
+
+}
+.check-section__decor {
+    position: absolute;
+    bottom: -183px;
+    left: -315px;
+    max-width: 1920px;
+    width: 100vw;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .check-section__wrapper {
+        margin: 0;
+    }
+    .check-section__table {
+        min-width: 809px;
+    }
+    .check-section__decor {
+        display: none;
+    }
+
+    .check-section__img {
+        display: none;
+    }
+
+    .check-section__right {
+        display: none;
+    }
+}
