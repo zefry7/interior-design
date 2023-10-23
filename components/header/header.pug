@@ -2,16 +2,22 @@ mixin header()
     header.header.header__wrapper    
         .header__logo RMC
         nav.header__menu 
-            a.header__item-menu(href="#") THE STUDIO
-            a.header__item-menu(href="#") pROJECTS
-            a.header__item-menu(href="#") architecture
-            a.header__item-menu(href="#") Blog
+            a.header__item-menu(href="") THE STUDIO
+            a.header__item-menu(href="") pROJECTS
+            a.header__item-menu(href="") architecture
+            a.header__item-menu(href="") Blog
         button.header__button Contact
         .burger 
-            .burger__button 
+            .burger__button(onclick="burgerMenuOpen()")
                 span 
                 span 
                 span
             .burger__content  
+                nav.header__menu 
+                    a.header__item-menu(href="") THE STUDIO
+                    a.header__item-menu(href="") pROJECTS
+                    a.header__item-menu(href="") architecture
+                    a.header__item-menu(href="") Blog
+                button.header__button Contact
 
 

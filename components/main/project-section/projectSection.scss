@@ -36,6 +36,7 @@
     font-family: "RR";
     color: #ABAEB7;
     position: relative;
+    z-index: 10;
     cursor: pointer;
     input {
         position: absolute;
@@ -107,5 +108,12 @@
         .project-section__list-column:nth-child(4) {
             display: none;
         }       
+    }
+}
+
+@media (max-width: 425px) {
+    .project-section__title,
+    .project-section__label {
+        align-self: flex-start;
     }
 }

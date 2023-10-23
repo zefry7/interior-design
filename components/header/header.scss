@@ -7,8 +7,8 @@
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 20;
-    background-color: #1A1D26;
+    z-index: 2;
+    transition: all 0.1s linear;
 }
 .header__logo {
     font-size: clamp(40px, 2.6vw, 50px);
@@ -25,9 +25,16 @@
     text-transform: uppercase;
     font-family: "RM";
     color: #ABAEB7;
+    position: relative;
+    z-index: 10;
+    &:hover {
+        color: #FFB077;
+    }
 }
 .header__button {
     padding: 15px 30px;
+    position: relative;
+    z-index: 15;
     border: 1px solid white;
     font-family: "RM";
     font-size: 16px;
@@ -35,6 +42,7 @@
     color: white;
 }
 .burger {
+    
 }
 .burger__button {
     height: 24px;
@@ -43,6 +51,9 @@
     flex-direction: column;
     align-items: end;
     justify-content: space-between;
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
     span {
         background-color: white;
         border-radius: 14px;
@@ -55,6 +66,45 @@
     }
 }
 .burger__content {
+    padding: clamp(20px, 5.2vw, 100px);
+    padding-top: 100px;
+    display: none;
+    position: absolute;
+    z-index: 16;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1A1D26;
+    overflow-y: auto;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+@keyframes move-burger {
+    0%{
+        top: -100vh;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.burger__content_active {
+    opacity: 1;
+    display: flex;
+    transition: all 0.1s linear;
+    animation: move-burger 0.3s linear;
+    flex-direction: column;
+    .header__menu {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header__button {
+        display: block;
+        margin-top: auto;
+    }
 }
 
 @media (max-width: 768px) {

@@ -123,6 +123,10 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.aboutUs-section__bottom .aboutUs-section__img-decor {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
 
 .aboutUs-section__img-decor img {
   max-width: 100%;
@@ -132,6 +136,7 @@
 .aboutUs-section__img-read-more {
   margin-left: 25px;
   position: relative;
+  top: 25px;
 }
 .aboutUs-section__img-read-more::before {
   content: "";
@@ -141,7 +146,34 @@
   height: 100%;
   background: url(/img/display/star.png) center/37px no-repeat;
 }
+.aboutUs-section__img-read-more img {
+  -webkit-animation: rotate-read-more 12s linear infinite;
+          animation: rotate-read-more 12s linear infinite;
+  max-width: 100%;
+  height: auto;
+}
 
+@-webkit-keyframes rotate-read-more {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-read-more {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 .aboutUs-section__right-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,7 +189,7 @@
   grid-row-end: 3;
 }
 .aboutUs-section__right-block .aboutUs-section__img-decor:first-child {
-  margin-top: clamp(50px, 4.6vw, 89px);
+  margin-top: auto;
 }
 
 @media (max-width: 1024px) {
@@ -205,11 +237,18 @@
   .aboutUs-section__top-block {
     margin-bottom: 0;
   }
+  .aboutUs-section__description {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
   .aboutUs-section__description::before {
     display: none;
   }
   .aboutUs-section__right-block {
     margin-bottom: 30px;
+  }
+  .aboutUs-section__right-block .aboutUs-section__img-decor:first-child {
+    margin-top: clamp(50px, 4.6vw, 89px);
   }
 }
 @media (max-width: 768px) {

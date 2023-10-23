@@ -1,6 +1,7 @@
 .main-section {
   margin: 0 clamp(20px, 5.2vw, 100px);
   margin-top: 100px;
+  margin-bottom: clamp(50px, 7.2vw, 140px);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,15 +9,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: clamp(50px, 7.2vw, 140px);
 }
 
 .main-section__info {
   position: relative;
-  z-index: 15;
+  z-index: 1;
   padding: clamp(28px, 3vw, 58px) 0;
   margin-right: 69px;
   max-width: clamp(368px, 35.4vw, 680px);
+  position: relative;
 }
 
 .main-section__label {
@@ -69,7 +70,7 @@
 
 .main-section__decor-text {
   position: absolute;
-  z-index: 10;
+  z-index: 0;
   display: inline-block;
   width: -webkit-max-content;
   width: -moz-max-content;

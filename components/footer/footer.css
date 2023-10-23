@@ -130,9 +130,12 @@
 }
 
 .footer-section__link {
+  position: relative;
+  z-index: 10;
   font-size: 18px;
   font-family: "RR";
   color: #ABAEB7;
+  cursor: pointer;
 }
 .footer-section__link:hover {
   color: #FFB077;

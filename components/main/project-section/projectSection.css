@@ -54,6 +54,7 @@
   font-family: "RR";
   color: #ABAEB7;
   position: relative;
+  z-index: 10;
   cursor: pointer;
 }
 .project-section__item input {
@@ -135,5 +136,12 @@
   .project-section__list-project .project-section__list-column:nth-child(3),
   .project-section__list-project .project-section__list-column:nth-child(4) {
     display: none;
+  }
+}
+@media (max-width: 425px) {
+  .project-section__title,
+  .project-section__label {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }

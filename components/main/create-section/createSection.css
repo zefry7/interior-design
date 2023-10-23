@@ -73,6 +73,7 @@
 
 .create-section__decor {
   position: absolute;
+  z-index: 0;
   width: 573px;
   right: 0;
   font-size: 985px;
