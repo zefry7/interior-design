@@ -11,25 +11,25 @@
 
 @font-face {
     font-family: "RM";
-    src: url(/font/Roboto-Medium.ttf);
+    src: url(font/Roboto-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: "RR";
-    src: url(/font/Roboto-Regular.ttf);
+    src: url(font/Roboto-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: "LM";
-    src: url(/font/Larken-Medium.ttf);
+    src: url(font/Larken-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: "LR";
-    src: url(/font/Larken-Regular.ttf);
+    src: url(font/Larken-Regular.ttf);
     font-weight: 400;
 } 
 
@@ -41,18 +41,18 @@
     overflow: hidden;
     background: #1A1D26;
     position: relative;
-    // &::before {
-    //     content: "";
-    //     display: inline-block;
-    //     position: absolute;
-    //     z-index: 2;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background: url(../img/background-page.png) left top/ clamp(425px, 52vw, 1000px);
-    //     opacity: 0.05;
-    // }
+    &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/background-page.png) left top/ clamp(425px, 52vw, 1000px);
+        opacity: 0.05;
+    }
 }
 
 .body-lock {

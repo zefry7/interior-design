@@ -2,10 +2,10 @@ mixin header()
     header.header.header__wrapper    
         .header__logo RMC
         nav.header__menu 
-            a.header__item-menu(href="") THE STUDIO
-            a.header__item-menu(href="") pROJECTS
-            a.header__item-menu(href="") architecture
-            a.header__item-menu(href="") Blog
+            a.header__item-menu(href="" data-scroll=".aboutUs-section") THE STUDIO
+            a.header__item-menu(href="" data-scroll=".project-section") pROJECTS
+            a.header__item-menu(href="" data-scroll=".create-section") architecture
+            a.header__item-menu(href="" data-scroll=".team-section") team
         button.header__button Contact
         .burger 
             .burger__button(onclick="burgerMenuOpen()")
@@ -14,10 +14,10 @@ mixin header()
                 span
             .burger__content  
                 nav.header__menu 
-                    a.header__item-menu(href="") THE STUDIO
-                    a.header__item-menu(href="") pROJECTS
-                    a.header__item-menu(href="") architecture
-                    a.header__item-menu(href="") Blog
+                    a.header__item-menu(href="" data-scroll=".aboutUs-section") THE STUDIO
+                    a.header__item-menu(href="" data-scroll=".project-section") pROJECTS
+                    a.header__item-menu(href="" data-scroll=".create-section") architecture
+                    a.header__item-menu(href="" data-scroll=".team-section") team
                 button.header__button Contact
 
 

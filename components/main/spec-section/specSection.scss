@@ -29,26 +29,23 @@
     & li:nth-child(4n + 4) {
         top: -129px;
     }
-    & li:last-child {
-        display: none;
-    }
-    & li:nth-child(4n + 1) {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(255, 255, 255, 0)), url(../../../img/display/spec-1.png) center/ 100% no-repeat;
-    }
-    & li:nth-child(4n + 2) {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(255, 255, 255, 0)), url(../../../img/display/spec-2.png) center/ 100% no-repeat;
-    }
-    & li:nth-child(4n + 3) {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(255, 255, 255, 0)), url(../../../img/display/spec-3.png) center/ 100% no-repeat;
-    }
-    & li:nth-child(4n + 4) {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(255, 255, 255, 0)), url(../../../img/display/spec-4.png) center/ 100% no-repeat;
-    }
+}
+.spec-section__item_fi {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(255, 255, 255, 0)), url(../../../img/display/spec-1.png) center/ 100% no-repeat;
+}
+.spec-section__item_se {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(255, 255, 255, 0)), url(../../../img/display/spec-2.png) center/ 100% no-repeat;
+}
+.spec-section__item_th {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(255, 255, 255, 0)), url(../../../img/display/spec-3.png) center/ 100% no-repeat;
+}
+.spec-section__item_fo {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(255, 255, 255, 0)), url(../../../img/display/spec-4.png) center/ 100% no-repeat;
 }
 .spec-section__item {
     padding: clamp(20px, 2vw, 30px);
     position: relative;
-    z-index: 12;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -92,11 +89,13 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .spec-section__items {
-        & li:last-child {
-            display: block;
-        }
+        position: relative;
+        left: -160px;
+    }
+    .spec-section__decor-text {
+        display: none;
     }
 }
 

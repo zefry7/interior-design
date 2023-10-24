@@ -69,6 +69,14 @@
   font-size: 16px;
   background: none;
   color: white;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.create-section__button:hover {
+  border: 1px solid #FFB077;
+  color: #FFB077;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .create-section__decor {

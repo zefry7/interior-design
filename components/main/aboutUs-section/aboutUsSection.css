@@ -237,6 +237,9 @@
   .aboutUs-section__top-block {
     margin-bottom: 0;
   }
+  .aboutUs-section__img-read-more {
+    top: 0;
+  }
   .aboutUs-section__description {
     -ms-flex-item-align: start;
         align-self: flex-start;

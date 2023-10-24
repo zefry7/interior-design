@@ -105,13 +105,13 @@
 }
 .check-section__decor {
     position: absolute;
+    z-index: 0;
     bottom: -183px;
     left: -315px;
     max-width: 1920px;
     width: 100vw;
     img {
-        max-width: 100%;
-        height: auto;
+
     }
 }
 

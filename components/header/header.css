@@ -51,8 +51,37 @@
   font-size: 16px;
   background: none;
   color: white;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.header__button:hover {
+  border: 1px solid #FFB077;
+  color: #FFB077;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
+@-webkit-keyframes button-hover {
+  0% {
+    background-color: initial;
+    color: white;
+  }
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
+
+@keyframes button-hover {
+  0% {
+    background-color: initial;
+    color: white;
+  }
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
 .burger__button {
   height: 24px;
   width: 27px;

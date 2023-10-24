@@ -121,16 +121,12 @@
 
 .check-section__decor {
   position: absolute;
+  z-index: 0;
   bottom: -183px;
   left: -315px;
   max-width: 1920px;
   width: 100vw;
 }
-.check-section__decor img {
-  max-width: 100%;
-  height: auto;
-}
-
 @media (max-width: 1024px) {
   .check-section__wrapper {
     margin: 0;
