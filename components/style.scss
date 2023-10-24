@@ -11,25 +11,25 @@
 
 @font-face {
     font-family: "RM";
-    src: url(font/Roboto-Medium.ttf);
+    src: url(../font/Roboto-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: "RR";
-    src: url(font/Roboto-Regular.ttf);
+    src: url(../font/Roboto-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: "LM";
-    src: url(font/Larken-Medium.ttf);
+    src: url(../font/Larken-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: "LR";
-    src: url(font/Larken-Regular.ttf);
+    src: url(../font/Larken-Regular.ttf);
     font-weight: 400;
 } 
 
@@ -73,11 +73,11 @@
 }
 ::-webkit-scrollbar-button:single-button:horizontal:decrement{
     width: 15px;
-    background: url(../../../img/display/arrow-scroll-right.svg) center/ 100% no-repeat, #23262F;
+    background: url(../img/display/arrow-scroll-right.svg) center/ 100% no-repeat, #23262F;
     
 }
 ::-webkit-scrollbar-button:single-button:horizontal:increment{
     display: block;
     width: 15px;
-    background: url(../../../img/display/arrow-scroll-left.svg) center/ 100% no-repeat, #23262F;
+    background: url(../img/display/arrow-scroll-left.svg) center/ 100% no-repeat, #23262F;
 }
