@@ -27,6 +27,8 @@
 }
 
 .team-section__wrapper {
+  position: relative;
+  z-index: 2;
   margin-bottom: 50px;
   width: 100%;
 }
