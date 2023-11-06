@@ -3,6 +3,11 @@ let listItem = document.querySelectorAll(".spec-section__item")
 let restartListItem = listItem
 let bo = false
 var stopT
+
+if(window.innerWidth <= 1300) {
+    items.style.left = "-160px";
+}
+
 window.addEventListener("resize", () => {
     if(window.innerWidth <= 1300 && bo == false) {
         bo = true
@@ -10,7 +15,7 @@ window.addEventListener("resize", () => {
             let a = value.cloneNode(true)
             items.append(a)
         })
-
+        items.style.left = "-160px";
         stopT = setInterval(() => {
             items.append(listItem[0])
             listItem = document.querySelectorAll(".spec-section__item")

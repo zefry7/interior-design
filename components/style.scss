@@ -34,9 +34,6 @@
 } 
 
 .body-wrapper {
-    margin: 0 auto;
-    max-width: 1920px;
-    min-width: 425px;
     width: 100%;
     overflow: hidden;
     background: #1A1D26;
@@ -53,6 +50,13 @@
         background: url(../img/background-page.png) left top/ clamp(425px, 52vw, 1000px);
         opacity: 0.05;
     }
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    min-width: 425px;
 }
 
 .body-lock {
