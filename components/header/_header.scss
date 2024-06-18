@@ -13,7 +13,8 @@
     font-size: clamp(40px, 2.6vw, 50px);
     font-family: "LM";
     color: white;
-    margin-right: clamp(0px, 9.3vw, 180px);
+    margin-right: clamp(0px, 5vw, 180px);
+    cursor: pointer;
 }
 .header__menu {
     margin-right: auto;
@@ -24,6 +25,10 @@
     text-transform: uppercase;
     font-family: "RM";
     color: #ABAEB7;
+    font-size: clamp(18px, 2vw, 20px);
+    @media (max-width: 768px) {
+        font-size: clamp(30px, 2vw, 20px);
+    }
     position: relative;
     z-index: 10;
     &:hover {
@@ -31,19 +36,22 @@
     }
 }
 .header__button {
-    padding: 15px 30px;
+    width: clamp(120px, 14vw, 170px);
+    padding: clamp(0px, 1.5vw, 12px) 0px;
     position: relative;
     z-index: 15;
     border: 1px solid white;
     font-family: "RM";
-    font-size: 16px;
+    font-size: clamp(18px, 2vw, 20px);
+    @media (max-width: 768px) {
+        font-size: clamp(26px, 2vw, 16px);
+    }
     background: none;
     color: white;
-    transition: all 0.3s linear;
+    transition: color 0.3s linear, border 0.3s linear;
     &:hover{
         border: 1px solid #FFB077;
         color: #FFB077;
-        transition: all 0.1s linear;
     }
 }
 @keyframes button-hover {
@@ -55,9 +63,6 @@
         background-color: white;
         color: black;
     }
-}
-.burger {
-    
 }
 .burger__button {
     height: 24px;
@@ -81,45 +86,30 @@
     }
 }
 .burger__content {
-    padding: clamp(20px, 5.2vw, 100px);
-    padding-top: 100px;
-    display: none;
-    position: absolute;
+    display: flex;
+    align-items: center;
     z-index: 16;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: #1A1D26;
+    height: auto;
+    width: 100%;
     overflow-y: auto;
-    opacity: 0;
-    transition: all 0.5s linear;
-}
-
-@keyframes move-burger {
-    0%{
-        top: -100vh;
-    }
-    100%{
+    opacity: 1;
+    transition: left 0.3s linear;
+    @media (max-width: 768px) {
+        padding: clamp(20px, 5.2vw, 100px);
+        padding-top: 100px;
+        flex-direction: column;
+        position: absolute;
+        align-items: start;
         top: 0;
+        left: -100%;
+        background-color: #1A1D26;
+        height: 100dvh;
+        width: 100%;
     }
 }
 
 .burger__content_active {
-    opacity: 1;
-    display: flex;
-    transition: all 0.1s linear;
-    animation: move-burger 0.3s linear;
-    flex-direction: column;
-    .header__menu {
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-    .header__button {
-        display: block;
-        margin-top: auto;
-    }
+    left: 0;
 }
 
 @media (max-width: 768px) {
@@ -127,10 +117,15 @@
         margin-right: auto;
     }
     .header__menu {
-        display: none;
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
     }
     .header__button {
-        display: none;
+        display: block;
+        margin-top: auto;
+        width: 100%;
     }
     .burger__button {
         display: flex;

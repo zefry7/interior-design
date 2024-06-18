@@ -1,13 +1,13 @@
-@import url(./null-style.css);
-@import url(./header/header.css);
-@import url(./main/main-section/mainSection.css);
-@import url(./main/spec-section/specSection.css);
-@import url(./main/aboutUs-section/aboutUsSection.css);
-@import url(./main/project-section/projectSection.css);
-@import url(./main/create-section/createSection.css);
-@import url(./main/check-section/checkSection.css);
-@import url(./main/team-section/teamSection.css);
-@import url(./footer/footer.css);
+@import url("./null-style.css");
+@import "./header/header.scss";
+@import "./main/main-section/mainSection.scss";
+@import "./main/spec-section/specSection.scss";
+@import "./main/aboutUs-section/aboutUsSection.scss";
+@import "./main/project-section/projectSection.scss";
+@import "./main/create-section/createSection.scss";
+@import "./main/check-section/checkSection.scss";
+@import "./main/team-section/teamSection.scss";
+@import "./footer/footer.scss";
 
 @font-face {
     font-family: "RM";
@@ -33,8 +33,14 @@
     font-weight: 400;
 } 
 
+
+html { 
+    scrollbar-gutter: stable;
+}
+
 .body-wrapper {
     width: 100%;
+    min-width: 425px;
     overflow: hidden;
     background: #1A1D26;
     position: relative;
@@ -42,13 +48,15 @@
         content: "";
         display: inline-block;
         position: absolute;
-        z-index: 2;
+        z-index: 0;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background: url(../img/background-page.png) left top/ clamp(425px, 52vw, 1000px);
         opacity: 0.05;
+
+        display: none;
     }
 }
 
@@ -56,7 +64,6 @@
     margin: 0 auto;
     max-width: 1920px;
     width: 100%;
-    min-width: 425px;
 }
 
 .body-lock {

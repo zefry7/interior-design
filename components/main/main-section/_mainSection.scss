@@ -8,6 +8,7 @@
 }
 .main-section__info {
     position: relative;
+    z-index: 1;
     padding: clamp(28px, 3vw, 58px) 0;
     margin-right: 69px;
     max-width: clamp(368px, 35.4vw ,680px);
