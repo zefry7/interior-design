@@ -4,6 +4,10 @@ let listLink = document.querySelectorAll(".header__item-menu");
 function burgerMenuOpen() {
     burgerContent.classList.toggle("burger__content_active")
     document.body.classList.toggle("body-lock")
+    window.scrollTo({
+        behavior: "smooth",
+        top: 0
+    })
 }
 
 window.addEventListener("resize", () => {
