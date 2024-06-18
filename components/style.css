@@ -1465,11 +1465,12 @@
 }
 html {
   scrollbar-gutter: stable;
+  min-width: 320px;
 }
 
 .body-wrapper {
   width: 100%;
-  min-width: 425px;
+  min-width: 320px;
   overflow: hidden;
   background: #1A1D26;
   position: relative;

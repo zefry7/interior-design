@@ -14,7 +14,7 @@ a:focus, a:active{outline: none; color: white;}
 nav,footer,header,aside{display: block;}
 
 html, body{
-	height: 100%;
+	height: auto;
 	width: 100%;
 	font-style: 100%;
 	line-height: 1;
