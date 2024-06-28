@@ -10,14 +10,16 @@
   <body> 
     <div class="body-wrapper">
       <div class="content">
-        <header class="header header__wrapper">   
-          <div class="header__logo">RMC</div>
-          <div class="burger__content"> 
-            <nav class="header__menu"> <a class="header__item-menu" href="" data-scroll=".aboutUs-section">THE STUDIO</a><a class="header__item-menu" href="" data-scroll=".project-section">pROJECTS</a><a class="header__item-menu" href="" data-scroll=".create-section">architecture</a><a class="header__item-menu" href="" data-scroll=".team-section">team</a></nav>
-            <button class="header__button">Contact</button>
-          </div>
-          <div class="burger"> 
-            <div class="burger__button" onclick="burgerMenuOpen()"><span> </span><span> </span><span></span></div>
+        <header class="header"> 
+          <div class="header__content"> 
+            <div class="header__logo" onclick="clickLogo()">RMC</div>
+            <div class="burger__content"> 
+              <nav class="header__menu"> <a class="header__item-menu" href="" data-scroll=".aboutUs-section">THE STUDIO</a><a class="header__item-menu" href="" data-scroll=".project-section">pROJECTS</a><a class="header__item-menu" href="" data-scroll=".create-section">architecture</a><a class="header__item-menu" href="" data-scroll=".team-section">team</a></nav>
+              <button class="header__button">Contact</button>
+            </div>
+            <div class="burger"> 
+              <div class="burger__button" onclick="burgerMenuOpen(e)"><span> </span><span> </span><span></span></div>
+            </div>
           </div>
         </header>
         <section class="main-section"> 
@@ -29,29 +31,6 @@
           </div>
           <div class="main-section__img"><img src="img/display/main.png"/></div>
           <p class="main-section__decor-text">Interior</p>
-        </section>
-        <section class="spec-section"> 
-          <p class="spec-section__label">TOP SERVICES</p>
-          <h2 class="spec-section__name">Our Specializations</h2>
-          <ul class="spec-section__items"> 
-            <li class="spec-section__item spec-section__item_fi">
-              <p class="spec-section__item-name">Construction</p>
-              <p class="spec-section__item-description">Tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li class="spec-section__item spec-section__item_se">
-              <p class="spec-section__item-name">Floor plan</p>
-              <p class="spec-section__item-description">Tempor incididunt ut labore et dolore magna aliqua. </p>
-            </li>
-            <li class="spec-section__item spec-section__item_th">
-              <p class="spec-section__item-name">Interior Design</p>
-              <p class="spec-section__item-description">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
-            </li>
-            <li class="spec-section__item spec-section__item_fo">
-              <p class="spec-section__item-name">Architecture Design</p>
-              <p class="spec-section__item-description">Tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-          </ul>
-          <p class="spec-section__decor-text">Design</p>
         </section>
         <section class="aboutUs-section">
           <div class="aboutUs-section__top-block"> 

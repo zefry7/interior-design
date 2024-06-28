@@ -1,12 +1,19 @@
 let burgerContent = document.getElementsByClassName("burger__content")[0];
 let listLink = document.querySelectorAll(".header__item-menu");
+const burgerButton = document.getElementsByClassName("burger__button")[0];
 
-function burgerMenuOpen() {
+burgerButton.addEventListener("click", (e) => {
+    e.stopPropagation()
     burgerContent.classList.toggle("burger__content_active")
     document.body.classList.toggle("body-lock")
+    e.currentTarget.classList.toggle("burger__button_active")
+})
+
+
+function clickLogo() {
     window.scrollTo({
-        behavior: "smooth",
-        top: 0
+        top: 0,
+        behavior: "smooth"
     })
 }
 
@@ -20,10 +27,13 @@ window.addEventListener("resize", () => {
 listLink.forEach(value => {
     value.addEventListener("click", (event) => {
         event.preventDefault()
+
         let el = document.querySelector(value.getAttribute("data-scroll"))
-        let y = el.getBoundingClientRect().top + window.scrollY - 140;
+        let y = el.offsetTop - 110;
+
         burgerContent.classList.remove("burger__content_active")
         document.body.classList.remove("body-lock")
+
         window.scrollTo({
             top: y,
             behavior: "smooth"

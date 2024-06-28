@@ -1,18 +1,19 @@
 mixin header() 
-    header.header.header__wrapper    
-        .header__logo RMC
-        .burger__content  
-            nav.header__menu 
-                a.header__item-menu(href="" data-scroll=".aboutUs-section") THE STUDIO
-                a.header__item-menu(href="" data-scroll=".project-section") pROJECTS
-                a.header__item-menu(href="" data-scroll=".create-section") architecture
-                a.header__item-menu(href="" data-scroll=".team-section") team
-            button.header__button Contact
-        .burger 
-            .burger__button(onclick="burgerMenuOpen()")
-                span 
-                span 
-                span
+    header.header  
+        .header__content 
+            .header__logo(onclick="clickLogo()") RMC
+            .burger__content  
+                nav.header__menu 
+                    a.header__item-menu(href="" data-scroll=".aboutUs-section") THE STUDIO
+                    a.header__item-menu(href="" data-scroll=".project-section") pROJECTS
+                    a.header__item-menu(href="" data-scroll=".create-section") architecture
+                    a.header__item-menu(href="" data-scroll=".team-section") team
+                button.header__button Contact
+            .burger 
+                .burger__button(onclick="burgerMenuOpen(e)")
+                    span 
+                    span 
+                    span
 
 
 

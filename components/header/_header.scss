@@ -1,15 +1,29 @@
 .header {
-    padding: 0 clamp(20px, 5.2vw, 100px);
-    height: 100px;
-    max-width: 1920px;
-    width: 100%;
     display: flex;
-    align-items: center;
+    width: 100%;
     top: 0;
-    z-index: 2;
-    transition: all 0.1s linear;
+    z-index: 20;
+    position: fixed;
+    max-width: 1440px;
+    &::before {
+        content: "";
+        height: 100px;
+        width: 100%;
+        background-color: #1a1d26cb;
+        backdrop-filter: blur(15px);
+        position: absolute;
+        z-index: -1;
+    }
+}
+.header__content {
+    padding: 0 clamp(20px, 5.2vw, 100px);
+    display: flex;
+    padding-top: 30px;
+    width: 100%;
+    height: max-content;
 }
 .header__logo {
+    height: max-content;
     font-size: clamp(40px, 2.6vw, 50px);
     font-family: "LM";
     color: white;
@@ -19,7 +33,7 @@
 .header__menu {
     margin-right: auto;
     display: flex;
-    gap: clamp(10px, 1.8vw, 35px);
+    gap: clamp(15px, 1.8vw, 35px);
 }
 .header__item-menu {
     text-transform: uppercase;
@@ -64,12 +78,16 @@
         color: black;
     }
 }
+.burger {
+    display: flex;
+    align-items: center;
+    height: clamp(40px, 2.6vw, 50px);
+}
 .burger__button {
     height: 24px;
     width: 27px;
     display: none;
     flex-direction: column;
-    align-items: end;
     justify-content: space-between;
     position: relative;
     z-index: 20;
@@ -84,14 +102,26 @@
     & span:last-child {
         width: 100%;
     }
+    
+    & span:nth-child(2) {
+        left: 30%;
+        position: relative;
+        transition: left 0.3s linear;
+    }
+
+    &_active {
+        & span:nth-child(2) {
+            left: 0;
+        }
+    
+    }
 }
 .burger__content {
     display: flex;
     align-items: center;
     z-index: 16;
-    height: auto;
+    height: max-content;
     width: 100%;
-    overflow-y: auto;
     opacity: 1;
     transition: left 0.3s linear;
     @media (max-width: 768px) {
@@ -101,10 +131,14 @@
         position: fixed;
         align-items: start;
         top: 0;
-        left: -100%;
+        left: 200%;
         background-color: #1A1D26;
-        height: 100dvh;
+        min-height: 100dvh;
+        height: 100%;
         width: 100%;
+    }
+    @media (max-width: 425px) {
+
     }
 }
 

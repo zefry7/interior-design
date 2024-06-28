@@ -1,8 +1,6 @@
 .aboutUs-section {
-    margin: 0 auto;
-    margin-bottom: clamp(50px, 7.2vw, 140px);
-    padding: 0 20px;
-    max-width: 1290px;
+    padding: 0 clamp(20px, 5.2vw, 100px);
+    padding-bottom: clamp(50px, 7.2vw, 140px);
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -71,31 +69,27 @@
 }
 .aboutUs-section__bottom {
     display: flex;
-    align-items: center;
     .aboutUs-section__img-decor {
-        align-self: flex-end;
+        img {
+            max-width: 100%;
+            height: 100%;
+        }
     }
 }
-.aboutUs-section__img-decor {
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-}
+
 .aboutUs-section__img-read-more {
-    margin-left: 25px;
+    margin: 0 10px;
     position: relative;
-    top: 25px;
     &::before {
         content: "";
         display: inline-block;
         position: absolute;
         width: 100%;
         height: 100%;
-        background: url(../../../img/display/star.png) center/ 37px no-repeat;
+        background: url("../img/display/star.png") center/ 37px no-repeat;
     }
     img {
-        animation: rotate-read-more 12s linear infinite;
+        animation: rotate-read-more 20s linear infinite;
         max-width: 100%;
         height: auto;
     }
@@ -113,6 +107,7 @@
 .aboutUs-section__right-block {
     display: flex;
     gap: clamp(18px, 1.5vw, 30px);
+    justify-content: space-between;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -120,6 +115,13 @@
 
     .aboutUs-section__img-decor:first-child {
         margin-top: auto;
+    }
+
+    .aboutUs-section__img-decor {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
 
@@ -143,14 +145,15 @@
     }
 
     .aboutUs-section__top-block {
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
 
     .aboutUs-section__img-read-more {
-        top: 0;
+        display: none;
     }
     .aboutUs-section__description {
         align-self: flex-start;
+        max-width: 100%;
         &::before{
             display: none;
         }
@@ -158,17 +161,36 @@
 
     .aboutUs-section__right-block {
         margin-bottom: 30px;
+        justify-content: space-around;
+        .aboutUs-section__img-decor {
+            max-width: 400px;
+            width: 100%;
+            img {
+                max-height: 550px;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
         .aboutUs-section__img-decor:first-child {
             margin-top: clamp(50px, 4.6vw, 89px);
+        }
+    }
+
+    .aboutUs-section__bottom {
+        .aboutUs-section__img-decor {
+            width: 100%;
+            img {
+                max-height: 175px;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
         }
     }
 }
 
 @media (max-width: 768px) {
-    .aboutUs-section__img-read-more {
-        display: none;
-    }
-
     .aboutUs-section__img-decor {
         width: 100%;
         img {
