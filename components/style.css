@@ -190,10 +190,16 @@
     min-height: 100dvh;
     height: 100%;
     width: 100%;
+    visibility: hidden;
   }
 }
+
 .burger__content_active {
-  left: 0;
+  left: 0%;
+}
+
+.burger__content_visible {
+  visibility: visible;
 }
 
 @media (max-width: 768px) {
@@ -1569,6 +1575,17 @@ body {
 
 .body-lock {
   overflow: hidden;
+}
+.body-lock .create-section,
+.body-lock .check-section,
+.body-lock .aboutUs-section,
+.body-lock .main-section,
+.body-lock .project-section,
+.body-lock .spec-section,
+.body-lock .team-section,
+.body-lock .footer-section,
+.body-lock .header__logo {
+  visibility: hidden;
 }
 
 ::-webkit-scrollbar {

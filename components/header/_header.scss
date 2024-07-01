@@ -136,14 +136,16 @@
         min-height: 100dvh;
         height: 100%;
         width: 100%;
-    }
-    @media (max-width: 425px) {
-
+        visibility: hidden;
     }
 }
 
 .burger__content_active {
-    left: 0;
+    left: 0%;
+}
+
+.burger__content_visible {
+    visibility: visible;
 }
 
 @media (max-width: 768px) {

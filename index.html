@@ -12,13 +12,13 @@
       <div class="content">
         <header class="header"> 
           <div class="header__content"> 
-            <div class="header__logo" onclick="clickLogo()">RMC</div>
+            <button class="header__logo" onclick="clickLogo()" tabIndex="0" aria-label="Название компании">RMC</button>
+            <div class="burger"> 
+              <button class="burger__button" tabIndex="0" aria-label="Кнопка для меню"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+            </div>
             <div class="burger__content"> 
               <nav class="header__menu"> <a class="header__item-menu" href="" data-scroll=".aboutUs-section">THE STUDIO</a><a class="header__item-menu" href="" data-scroll=".project-section">pROJECTS</a><a class="header__item-menu" href="" data-scroll=".create-section">architecture</a><a class="header__item-menu" href="" data-scroll=".team-section">team</a></nav>
               <button class="header__button">Contact</button>
-            </div>
-            <div class="burger"> 
-              <div class="burger__button" onclick="burgerMenuOpen(e)"><span> </span><span> </span><span></span></div>
             </div>
           </div>
         </header>

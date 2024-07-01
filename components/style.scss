@@ -76,6 +76,18 @@ body {
 
 .body-lock {
     overflow: hidden;
+
+    .create-section,
+    .check-section,
+    .aboutUs-section,
+    .main-section,
+    .project-section,
+    .spec-section,
+    .team-section,
+    .footer-section,
+    .header__logo {
+        visibility: hidden;
+    }
 }
 
 

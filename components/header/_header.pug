@@ -1,7 +1,13 @@
 mixin header() 
     header.header  
         .header__content 
-            .header__logo(onclick="clickLogo()") RMC
+            button.header__logo(onclick="clickLogo()" tabIndex="0" aria-label="Название компании")RMC
+            .burger 
+                button.burger__button(tabIndex="0" aria-label="Кнопка для меню")
+                    span(aria-hidden="true")
+                    span(aria-hidden="true")
+                    span(aria-hidden="true")
+
             .burger__content  
                 nav.header__menu 
                     a.header__item-menu(href="" data-scroll=".aboutUs-section") THE STUDIO
@@ -9,11 +15,5 @@ mixin header()
                     a.header__item-menu(href="" data-scroll=".create-section") architecture
                     a.header__item-menu(href="" data-scroll=".team-section") team
                 button.header__button Contact
-            .burger 
-                .burger__button(onclick="burgerMenuOpen(e)")
-                    span 
-                    span 
-                    span
-
 
 
