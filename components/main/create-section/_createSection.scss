@@ -1,9 +1,11 @@
 .create-section {
-    margin-bottom: clamp(50px, 7.2vw, 140px);
-    height: 603px;
-    display: flex;
-    align-items: center;
     background-color: #23272F;
+    margin-bottom: clamp(50px, 7.2vw, 140px);
+}
+.create-section__content  {
+    display: flex;
+    height: 603px;
+    align-items: center;
     position: relative;
 }
 .create-section__home-img {
@@ -18,7 +20,7 @@
     }
 }
 .create-section__info {
-    width: 630px;
+    max-width: 630px;
     position: relative;
     z-index: 15;
 }
@@ -74,7 +76,7 @@
 }
 
 @media (max-width: 1024px) {
-    .create-section {
+    .create-section__content {
         padding: 30px 20px;
         flex-direction: column-reverse;
         height: auto;

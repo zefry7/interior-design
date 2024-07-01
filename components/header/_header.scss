@@ -7,7 +7,7 @@
     max-width: 1440px;
     &::before {
         content: "";
-        height: 100px;
+        height: 95px;
         width: 100%;
         background-color: #1a1d26cb;
         backdrop-filter: blur(15px);
@@ -16,9 +16,9 @@
     }
 }
 .header__content {
-    padding: 0 clamp(20px, 5.2vw, 100px);
+    padding: 15px clamp(20px, 5.2vw, 100px);
     display: flex;
-    padding-top: 30px;
+    align-items: center;
     width: 100%;
     height: max-content;
 }

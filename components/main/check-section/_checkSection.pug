@@ -73,10 +73,10 @@ mixin checkSection()
                             td $2,500
                             td 
                                 button.check-section__view-now VIEW NOW
-            .check-section__img 
-                img(src="img/display/check.png", alt="")
-        .check-section__decor 
-            img(src="img/display/line.svg", alt="")
+            .check-section__img(aria-hidden="true")
+                img(src="img/display/check.png" alt="Изображение" loading="lazy")
+        .check-section__decor(aria-hidden="true")
+            img(src="img/display/line.svg" alt="Линия" loading="lazy")
 
 
             
