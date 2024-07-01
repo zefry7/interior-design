@@ -57,7 +57,6 @@
     }
     .footer-section__column:nth-child(3) {
         margin-left: clamp(0px, 5.2vw, 100px);
-        width: clamp(245px, 17.9vw, 345px);
         grid-column-start: 3;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -87,6 +86,7 @@
     color: #D7E0E1;
 }
 .footer-section__link {
+    width: max-content;
     position: relative;
     z-index: 10;
     font-size: 18px;
@@ -116,12 +116,12 @@
     text-align: center;
     font-family: "RR";
     color: #abaeb7cc;
-    span {
+    a {
         color: #FFB077;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .footer-section__info {
         max-width: 636px;
         width: 100%;

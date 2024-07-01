@@ -1,5 +1,5 @@
 .check-section {
-    margin-bottom: clamp(50px, 7.2vw, 140px);
+    margin-bottom: clamp(50px, 7.2vw, 160px);
     padding: 0 clamp(20px, 5.2vw, 100px);
     position: relative;
     width: 100%;
@@ -110,7 +110,7 @@
     position: absolute;
     z-index: 0;
     bottom: -183px;
-    left: -315px;
+    left: -240px;
     max-width: 1920px;
     width: 100vw;
 }
