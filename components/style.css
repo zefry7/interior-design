@@ -13,7 +13,7 @@
   content: "";
   height: 95px;
   width: 100%;
-  background-color: rgba(26, 29, 38, 0.7960784314);
+  background: rgba(26, 29, 38, 0.7960784314);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   position: absolute;
@@ -43,6 +43,11 @@
   color: white;
   margin-right: clamp(0px, 5vw, 180px);
   cursor: pointer;
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+.header__logo:hover {
+  color: #FFB077;
 }
 
 .header__menu {
@@ -60,6 +65,8 @@
   font-size: clamp(16px, 2vw, 20px);
   position: relative;
   z-index: 10;
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
 }
 @media (max-width: 768px) {
   .header__item-menu {
@@ -333,7 +340,7 @@
   line-height: 90%;
   font-family: "RR";
   text-transform: uppercase;
-  color: rgba(11, 14, 23, 0.5019607843);
+  color: #0b0e17;
 }
 
 @media (max-width: 1024px) {
@@ -1365,6 +1372,10 @@
 }
 .footer-section__info .footer-section__column:nth-child(2) {
   padding: 0 clamp(0px, 7.8vw, 150px);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 20px;
   position: relative;
   -ms-grid-column: 2;
       grid-column-start: 2;
@@ -1428,6 +1439,12 @@
   font-size: clamp(40px, 2.6vw, 50px);
   font-family: "LM";
   color: white;
+  text-align: left;
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+.footer-section__name:hover {
+  color: #FFB077;
 }
 
 .footer-section__description {
@@ -1444,10 +1461,12 @@
   width: max-content;
   position: relative;
   z-index: 10;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "RR";
   color: #ABAEB7;
   cursor: pointer;
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
 }
 .footer-section__link:hover {
   color: #FFB077;
@@ -1571,7 +1590,6 @@
   font-weight: 400;
 }
 html {
-  scrollbar-gutter: stable;
   width: 100%;
   height: 100%;
 }
@@ -1588,19 +1606,6 @@ body {
   overflow: hidden;
   background: #1A1D26;
   position: relative;
-}
-.body-wrapper::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/background-page.png) left top/clamp(425px, 52vw, 1000px);
-  opacity: 0.05;
-  display: none;
 }
 
 .content {

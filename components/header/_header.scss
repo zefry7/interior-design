@@ -9,7 +9,7 @@
         content: "";
         height: 95px;
         width: 100%;
-        background-color: #1a1d26cb;
+        background: #1a1d26cb;
         backdrop-filter: blur(15px);
         position: absolute;
         z-index: -1;
@@ -29,6 +29,10 @@
     color: white;
     margin-right: clamp(0px, 5vw, 180px);
     cursor: pointer;
+    transition: color 0.1s linear;
+    &:hover {
+        color: #FFB077;
+    }
 }
 .header__menu {
     margin-right: auto;
@@ -45,6 +49,7 @@
     }
     position: relative;
     z-index: 10;
+    transition: color 0.1s linear;
     &:hover {
         color: #FFB077;
     }

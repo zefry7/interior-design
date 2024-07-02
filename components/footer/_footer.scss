@@ -31,6 +31,8 @@
     }
     .footer-section__column:nth-child(2) {
         padding: 0 clamp(0px, 7.8vw, 150px);
+        justify-content: start;
+        gap: 20px;
         position: relative;
         grid-column-start: 2;
         grid-column-end: 2;
@@ -77,6 +79,11 @@
     font-size: clamp(40px, 2.6vw, 50px);
     font-family: "LM";
     color: white;
+    text-align: left;
+    transition: color 0.1s linear;
+    &:hover {
+        color: #FFB077;
+    }
 }
 .footer-section__description {
     width: clamp(245px, 17.9vw, 345px);
@@ -89,10 +96,11 @@
     width: max-content;
     position: relative;
     z-index: 10;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "RR";
     color: #ABAEB7;
     cursor: pointer;
+    transition: color 0.1s linear;
     &:hover {
         color: #FFB077;
     }
@@ -162,8 +170,4 @@
     .footer-section__description {
         width: 100%;
     }
-}
-
-@media (max-width: 425px) {
-
 }

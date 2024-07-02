@@ -18,14 +18,13 @@ mixin footer()
                     img(src="img/display/footer-2.webp", alt="Пример проекта" loading="lazy")
         .footer-section__info 
             .footer-section__column 
-                p.footer-section__name RMC
+                button.footer-section__name(onclick="clickLogo()" tabIndex="0") RMC
                 p.footer-section__description Take a look at how we designed this housesimply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
             .footer-section__column 
-                button.footer-section__link(tabIndex="0") The Studio
-                button.footer-section__link(tabIndex="0") Projects
-                button.footer-section__link(tabIndex="0") Architecture
-                button.footer-section__link(tabIndex="0") Blog
-                button.footer-section__link(tabIndex="0") Contact
+                button.footer-section__link(data-scroll=".aboutUs-section" tabIndex="0") The Studio
+                button.footer-section__link(data-scroll=".project-section" tabIndex="0") Projects
+                button.footer-section__link(data-scroll=".create-section" tabIndex="0") Architecture
+                button.footer-section__link(data-scroll=".footer-section" tabIndex="0") Contact
             .footer-section__column 
                 p.footer-section__label Visit
                 p.footer-section__text City, street

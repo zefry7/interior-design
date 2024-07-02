@@ -18,7 +18,12 @@
               <button class="burger__button" tabIndex="0" aria-label="Кнопка для меню"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
             </div>
             <div class="burger__content"> 
-              <nav class="header__menu" aria-label="Навигационное меню"><a class="header__item-menu" href="" data-scroll=".aboutUs-section">THE STUDIO</a><a class="header__item-menu" href="" data-scroll=".project-section">pROJECTS</a><a class="header__item-menu" href="" data-scroll=".create-section">architecture</a><a class="header__item-menu" href="" data-scroll=".team-section">team</a></nav>
+              <nav class="header__menu" aria-label="Навигационное меню">
+                <button class="header__item-menu" data-scroll=".aboutUs-section" tabIndex="0">THE STUDIO</button>
+                <button class="header__item-menu" data-scroll=".project-section" tabIndex="0">pROJECTS</button>
+                <button class="header__item-menu" data-scroll=".create-section" tabIndex="0">architecture</button>
+                <button class="header__item-menu" data-scroll=".team-section" tabIndex="0">team</button>
+              </nav>
               <button class="header__button">Contact</button>
             </div>
           </div>
@@ -31,7 +36,7 @@
             <button class="main-section__button">Let’s work together</button>
           </div>
           <div class="main-section__img" aria-hidden="true"><img src="img/display/main.webp"/></div>
-          <p class="main-section__decor-text" aria-hidden="true" role="presentation">Interior</p>
+          <div class="main-section__decor-text" aria-hidden="true">Interior</div>
         </section>
         <section class="spec-section"> 
           <p class="spec-section__label">TOP SERVICES</p>
@@ -249,15 +254,14 @@
           </div>
           <div class="footer-section__info"> 
             <div class="footer-section__column"> 
-              <p class="footer-section__name">RMC</p>
+              <button class="footer-section__name" onclick="clickLogo()" tabIndex="0">RMC</button>
               <p class="footer-section__description">Take a look at how we designed this housesimply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <div class="footer-section__column"> 
-              <button class="footer-section__link" tabIndex="0">The Studio</button>
-              <button class="footer-section__link" tabIndex="0">Projects</button>
-              <button class="footer-section__link" tabIndex="0">Architecture</button>
-              <button class="footer-section__link" tabIndex="0">Blog</button>
-              <button class="footer-section__link" tabIndex="0">Contact</button>
+              <button class="footer-section__link" data-scroll=".aboutUs-section" tabIndex="0">The Studio</button>
+              <button class="footer-section__link" data-scroll=".project-section" tabIndex="0">Projects</button>
+              <button class="footer-section__link" data-scroll=".create-section" tabIndex="0">Architecture</button>
+              <button class="footer-section__link" data-scroll=".footer-section" tabIndex="0">Contact</button>
             </div>
             <div class="footer-section__column"> 
               <p class="footer-section__label">Visit</p>
@@ -271,5 +275,6 @@
     </div>
     <script src="components/header/header.js"> </script>
     <script src="components/main/project-section/projectSection.js"></script>
+    <script src="components/footer/footer.js"> </script>
   </body>
 </html>

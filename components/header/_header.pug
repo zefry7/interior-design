@@ -10,10 +10,10 @@ mixin header()
 
             .burger__content  
                 nav.header__menu(aria-label="Навигационное меню")
-                    a.header__item-menu(href="" data-scroll=".aboutUs-section") THE STUDIO
-                    a.header__item-menu(href="" data-scroll=".project-section") pROJECTS
-                    a.header__item-menu(href="" data-scroll=".create-section") architecture
-                    a.header__item-menu(href="" data-scroll=".team-section") team
+                    button.header__item-menu(data-scroll=".aboutUs-section" tabIndex="0") THE STUDIO
+                    button.header__item-menu(data-scroll=".project-section" tabIndex="0") pROJECTS
+                    button.header__item-menu(data-scroll=".create-section" tabIndex="0") architecture
+                    button.header__item-menu(data-scroll=".team-section" tabIndex="0") team
                 button.header__button Contact
 
 

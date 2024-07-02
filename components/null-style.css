@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
+	-webkit-tap-highlight-color: transparent;
 }
 *, *:before, *:after{
 	-moz-box-sizing: border-box;
@@ -19,6 +20,7 @@ html, body{
 	font-style: 100%;
 	line-height: 1;
 	font-style: 14px;
+	scrollbar-gutter: stable;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -33,5 +35,5 @@ a, a:visited{text-decoration: none; color: white;}
 a:hover{text-decoration: none;}
 ul li{list-style-type: none;}
 img{vertical-align: top;}
-
-h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
+p, span{cursor: default;}
+h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400; cursor: default;}
