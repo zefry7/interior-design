@@ -650,7 +650,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../img/display/star.png") center/37px no-repeat;
+  background: url("../img/display/star.webp") center/37px no-repeat;
 }
 .aboutUs-section__img-read-more img {
   -webkit-animation: rotate-read-more 20s linear infinite;

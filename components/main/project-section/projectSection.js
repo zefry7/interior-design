@@ -1,19 +1,19 @@
 const data = [
     {
-        srcF: "img/display/project-1.png",
-        srcS: "img/display/project-2.png"
+        srcF: "img/display/project-1.webp",
+        srcS: "img/display/project-2.webp"
     },
     {
-        srcF: "img/display/project-3.png",
-        srcS: "img/display/project-4.png"
+        srcF: "img/display/project-3.webp",
+        srcS: "img/display/project-4.webp"
     },
     {
-        srcF: "img/display/project-5.png",
-        srcS: "img/display/project-6.png"
+        srcF: "img/display/project-5.webp",
+        srcS: "img/display/project-6.webp"
     },
     {
-        srcF: "img/display/project-7.png",
-        srcS: "img/display/project-8.png"
+        srcF: "img/display/project-7.webp",
+        srcS: "img/display/project-8.webp"
     },
 ]
 
