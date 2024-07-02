@@ -5,15 +5,15 @@ mixin projectSection()
             h2.project-section__title Our Latest Projects
             ul.project-section__categors
                 li.project-section__item 
-                    input(type="radio" class="project-section__item-input" data-type="0" name="categor" checked)
+                    input(type="radio" class="project-section__item-input" data-type="0" name="categor" aria-label="All" checked)
                     span All
                 li.project-section__item 
-                    input(type="radio" class="project-section__item-input" data-type="1" name="categor")
+                    input(type="radio" class="project-section__item-input" data-type="1" name="categor" aria-label="Architecture")
                     span Architecture
                 li.project-section__item 
-                    input(type="radio" class="project-section__item-input" data-type="0" name="categor")
+                    input(type="radio" class="project-section__item-input" data-type="0" name="categor" aria-label="Construction")
                     span Construction
                 li.project-section__item 
-                    input(type="radio" class="project-section__item-input" data-type="1" name="categor")
+                    input(type="radio" class="project-section__item-input" data-type="1" name="categor" aria-label="Interior Design")
                     span Interior Design
         .project-section__list-project
