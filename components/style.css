@@ -656,6 +656,8 @@
   display: flex;
 }
 .aboutUs-section__bottom .aboutUs-section__img-decor img {
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
   height: 100%;
 }
@@ -1211,6 +1213,8 @@
 }
 
 .check-section__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
 }
